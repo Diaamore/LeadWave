@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Request Campaign</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header><h1>Request Campaign Plan</h1></header>
+
+<section class="container">
+
+<form action="https://formspree.io/f/YOURID" method="POST">
+<label>Company Name</label>
+<input name="company" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Budget</label>
+<select name="budget">
+<option>$500-$1,000</option>
+<option>$1,000-$5,000</option>
+<option>$5,000+</option>
+</select>
+
+<label>Campaign Goal</label>
+<textarea name="goal"></textarea>
+
+<button type="submit">Submit</button>
+</form>
+
+</section>
+
+</body>
+</html>

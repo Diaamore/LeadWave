@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Client Dashboard Demo</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header><h1>Client Campaign Dashboard (Demo)</h1></header>
+
+<section class="container">
+
+<div class="grid">
+<div class="card"><h3>Leads</h3><h2>128</h2></div>
+<div class="card"><h3>Clicks</h3><h2>2940</h2></div>
+<div class="card"><h3>Conversions</h3><h2>63</h2></div>
+</div>
+
+<canvas id="chart"></canvas>
+
+</section>
+
+<script>
+new Chart(document.getElementById('chart'), {
+type:'bar',
+data:{labels:['W1','W2','W3','W4'],
+datasets:[{label:'Leads',data:[22,31,40,35]}]}
+});
+</script>
+
+</body>
+</html>
